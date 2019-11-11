@@ -3,7 +3,7 @@
 # Data ：2019/7/12 7:41                                                                    
 from tools.os import shell_tool
 import pytest
-                                                                                           
+
 if __name__ == '__main__':                                                                 
     # 修改成要执行的测试用例                                                               
     test_case = './test_case/test_hello.py'
@@ -15,3 +15,5 @@ if __name__ == '__main__':
                  xml_report_path, test_case])                                              
     cmd1 = 'allure generate %s -o %s --clean' % (xml_report_path, html_report_path)
     shell_tool.invoke(cmd1)
+
+print("hello,wwwwww")
